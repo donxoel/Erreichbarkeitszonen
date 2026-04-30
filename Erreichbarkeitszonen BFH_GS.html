@@ -158,7 +158,7 @@
                 var colors = ['#1a9641','#1a9641','#1a9641','#1a9641'];
                 var rows = '';
                 layerNames.forEach(function(name, i) {
-                    var checked = i < 2 ? 'checked' : '';
+                    var checked = (i === 0 || i === 2) ? 'checked' : '';
                     rows += '<label class="clc-row">'
                           + '<input type="checkbox" ' + checked + ' data-index="' + i + '">'
                           + '<span class="clc-dot" style="background:' + colors[i] + '"></span>'
