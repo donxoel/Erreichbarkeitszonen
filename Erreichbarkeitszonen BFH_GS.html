@@ -144,7 +144,7 @@
             layer.on('remove', function() { marker.remove(); });
 
             overlayMaps[layerNames[index]] = layer;
-            if (index < 2) {
+            if (index === 0 || index === 2) {
                 layer.addTo(map);
                 marker.addTo(map);
             }
